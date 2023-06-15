@@ -37,9 +37,9 @@ def check_exam_result():
     elif total_score < 39:
         print("Failed and Repeated")
     elif exam_score < 25:
-        print("Failed in the exam component, Certificate Not issued")
+        print(f"Failed in the exam component with a score of {exam_score}, Certificate Not issued")
     elif assessment_score < 15:
-        print("Failed in the assessment component, Certificate Not Issued")
+        print(f"Failed in the assessment component with a score of {assessment_score}, Certificate Not Issued")
 
     # Check if the student passed both components
     if total_score >= 40 and exam_score >= 25 and assessment_score >= 15 and has_paid is True:
